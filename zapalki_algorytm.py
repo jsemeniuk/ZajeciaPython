@@ -15,9 +15,7 @@ def zapalki_walidacja():
         zabrane_zapalki = input('Zabierz 1, 2 lub 3 zapałki: ')
         try:
             zabrane_zapalki = int(zabrane_zapalki)
-            if (zabrane_zapalki == 1 or
-                zabrane_zapalki == 2 or
-                zabrane_zapalki == 3):
+            if zabrane_zapalki in [1, 2, 3]:
                 return zabrane_zapalki
             else:
                 print('Podana wartość jest nieprawidłowa')
