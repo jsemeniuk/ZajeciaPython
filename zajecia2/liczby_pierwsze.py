@@ -7,7 +7,7 @@ def pierwsza(n):
     return True
 
 
-test = [1, 3, 4, 8, 11, 44]
+'''test = [1, 3, 4, 8, 11, 44]
 for liczba in test:
-    print("{0}: {1}".format(str(liczba), pierwsza(liczba)))
+    print("{0}: {1}".format(str(liczba), pierwsza(liczba)))'''
 
