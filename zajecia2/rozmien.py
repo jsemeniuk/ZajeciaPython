@@ -24,7 +24,7 @@ def rozmien(portfel, kwota):
 
 
 portfel_test = [0, 2, 3, 0, 0, 5]
-kwota_test = 12
+kwota_test = 34
 
 
 print(rozmien(portfel_test, kwota_test))

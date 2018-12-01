@@ -1,5 +1,5 @@
-from dzielenie import *
-from liczby_pierwsze import pierwsza
+from zajecia1.dzielenie import *
+
 
 def dzielniki_pierwsze(n):
     for dzielnik in lista_dzielnikow(n):

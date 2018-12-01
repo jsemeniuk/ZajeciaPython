@@ -2,7 +2,7 @@
 20.11.2018, Acturis
 wyk. Joanna Semeniuk
 """
-from zapalki_algorytm import *
+from zajecia2.zapalki_algorytm import *
 
 ilosc_zapalek = losuj_zapalki()
 print('Początkowa ilość zapałek: %s' % ilosc_zapalek)
