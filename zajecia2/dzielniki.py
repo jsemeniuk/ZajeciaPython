@@ -1,5 +1,5 @@
 from zajecia1.dzielenie import *
-from liczby_pierwsze import pierwsza
+from zajecia2.liczby_pierwsze import pierwsza
 
 
 def dzielniki_pierwsze(n):
@@ -18,7 +18,3 @@ def doskonala(n):
         return True
     else:
         return False
-
-
-print(dzielniki_pierwsze(12))
-print(doskonala(12))

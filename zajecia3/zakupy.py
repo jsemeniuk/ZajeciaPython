@@ -11,14 +11,3 @@ def zakupy(cennik, lista):
     vat = vat_paragon(paragon)
     rachunek = rachunek_bez_vat + vat
     return rachunek
-
-
-cennik = {
-    'kawa': 14.99,
-    'pomarańcze': 3.49,
-    'olej': 4.99
-}
-
-lista = {'olej': 2, 'kawa': 1}
-
-print(zakupy(cennik, lista))

@@ -31,6 +31,3 @@ def liczba_zdan(tekst):
         if len(zdanie) > 0:
             liczba_zdan += 1
     return liczba_zdan
-
-
-print(statystyka('plik_testowy'))

@@ -28,11 +28,3 @@ def uprosc_zdanie(tekst, dl_slowa, liczba_slow):
         losowy_wyraz = random.randint(0, len(lista_slow) - 1)
         lista_slow.pop(losowy_wyraz)
     return zbuduj_zdanie(lista_slow)
-
-
-lista = [["lódź", "się", "obudziła"], ["ogary", "poszły", "w", "las"]]
-print(zbuduj_zdania(lista))
-
-tekst = "Lorem ipsum dolor sit amet, consectetur adipiscing elit,\
-sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-print(uprosc_zdanie(tekst, 9, 5))

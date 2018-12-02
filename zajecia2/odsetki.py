@@ -11,7 +11,3 @@ def lokata_odnawialna(oproc, czas, kwota):
         kwota += odsetki
         ods_wynik += odsetki
     return ods_wynik
-
-
-print(odsetki(0.03, 12, 1000))
-print(lokata_odnawialna(0.03, 3, 1000))

@@ -7,19 +7,8 @@ def silnia(n):
     return wynik
 
 
-print(silnia(3))
-print(silnia(5))
-
-
 def suma_silni(n):
     wynik = 0
     for i in range(1, n+1):
         wynik = wynik + silnia(i)
     return wynik
-
-
-for i in range(3, 6):
-    print("{0}: {1:4d}".format(i, suma_silni(i)))
-
-
-

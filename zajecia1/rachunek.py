@@ -13,9 +13,3 @@ def rachunek(kwota):
             oplata[pieniadz] = ilosc
             kwota -= pieniadz * ilosc
     return oplata
-
-
-print(rachunek(1))
-print(rachunek(12))
-print(rachunek(123))
-print(rachunek(345))

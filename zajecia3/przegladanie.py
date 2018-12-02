@@ -22,5 +22,3 @@ def przegladanie(root):
         for dirname in dir_list:
             przegladanie(os.path.join(root, dirname))
     return size_list
-
-print(przegladanie('.'))

@@ -20,7 +20,3 @@ def statystyka_slow(ściezka):
 # TODO Funkcja do prównywania tekstów
 def porownanie_tekstow():
     return None
-
-print(statystyka_slow('plik_testowy'))
-
-

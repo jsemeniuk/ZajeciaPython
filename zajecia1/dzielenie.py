@@ -12,7 +12,3 @@ def lista_dzielnikow(n):
         if n % i == 0:
             lista_dzielnikow.append(i)
     return lista_dzielnikow
-
-
-#print(suma_dzielnikow(6))
-
