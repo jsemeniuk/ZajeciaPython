@@ -8,7 +8,5 @@ def silnia(n):
 
 
 def suma_silni(n):
-    wynik = 0
-    for i in range(1, n+1):
-        wynik = wynik + silnia(i)
+    wynik = sum([silnia(i) for i in range(1, n+1)])
     return wynik
