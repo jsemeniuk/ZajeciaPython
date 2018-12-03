@@ -23,5 +23,5 @@ def liczba_slow(tekst):
 
 
 def liczba_zdan(tekst):
-    liczba_zdan = sum([1 for zdanie in re.split("[.|!|?]", tekst) if len(zdanie) > 0])
+    liczba_zdan = sum([1 for zdanie in re.split("[.!?]", tekst) if len(zdanie) > 0])
     return liczba_zdan
