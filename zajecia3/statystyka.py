@@ -1,3 +1,5 @@
+import re
+
 def statystyka(ściezka):
     stat = {}
 
@@ -11,23 +13,15 @@ def statystyka(ściezka):
 
 
 def liczba_znakow(tekst):
-    liczba_znakow = 0
-    for znak in tekst:
-        if znak != ' ':
-            liczba_znakow += 1
+    liczba_znakow = sum([1 for znak in tekst if znak != ' '])
     return liczba_znakow
 
 
 def liczba_slow(tekst):
-    liczba_slow = 0
-    for akapit in tekst.split("\n"):
-        liczba_slow += len(akapit.split(" "))
+    liczba_slow = sum([len(akapit.split(" ")) for akapit in tekst.split("\n")])
     return liczba_slow
 
 
 def liczba_zdan(tekst):
-    liczba_zdan = 0
-    for zdanie in tekst.split("."):
-        if len(zdanie) > 0:
-            liczba_zdan += 1
+    liczba_zdan = sum([1 for zdanie in re.split("[.|!|?]", tekst) if len(zdanie) > 0])
     return liczba_zdan
