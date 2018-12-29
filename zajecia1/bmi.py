@@ -4,11 +4,14 @@ wyk. Joanna Semeniuk
 """
 
 
+class NotHigherthan0(Exception):
+    pass
+
+
 def bmi(masa, wzrost):
-    if masa > 0 and wzrost > 0:
-        return round(masa / (wzrost ** 2), 1)
-    else:
-        return "Podane wartości są nieprawidłowe"
+    if masa <= 0 or wzrost <= 0:
+        raise NotHigherthan0
+    return round(masa / (wzrost ** 2), 1)
 
 
 def komentarz(bmi):
@@ -22,5 +25,4 @@ def komentarz(bmi):
         return "Bmi równe %s oznacza: otyłość" % bmi
 
 
-
-
+print(bmi(100, 1.57))

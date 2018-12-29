@@ -4,6 +4,7 @@ import os.path
 # TODO Lista plików posortowana po rozmiarze
 # TODO Lista plików o tym skrócie (MD5, SHA-1/SHA-2)
 
+
 def przegladanie(root):
     file_list = os.listdir(root)
     dir_list = []
